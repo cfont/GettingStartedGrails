@@ -21,4 +21,7 @@ class Race {
 
     }
 
+    String toString() {"${this.name} : ${this.city}, ${this.state}"}
+
+
 }

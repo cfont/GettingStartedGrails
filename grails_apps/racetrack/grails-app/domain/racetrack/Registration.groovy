@@ -19,6 +19,9 @@ class Registration {
       postalAddress(maxLength:255)
       emailAddress(maxLength:50,email:true)
       race(nullable:false)
-      
+
     }
+
+    String toString() {"${this.name}:${this.emailAddress}"}
+    
 }
