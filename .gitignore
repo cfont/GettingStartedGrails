@@ -32,5 +32,5 @@
 
 # "temporary" build files
 /target
-/grails_apps/racetrack/
+/grails_apps/racetrack/target
 
