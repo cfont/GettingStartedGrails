@@ -13,5 +13,12 @@ class Registration {
     static optionals = ["postalAddress"]
 
     static constraints = {
+      name(maxLength:50,blank:false)
+      dateOfBirth(nullable:false)
+      gender(inList:["M","F"])
+      postalAddress(maxLength:255)
+      emailAddress(maxLength:50,email:true)
+      race(nullable:false)
+      
     }
 }
