@@ -12,5 +12,13 @@ class Race {
     static hasMany = [registrations:Registration]
 
     static constraints = {
+      name(maxLength:50,blank:false)
+      startDateTime(validator: {return (it > new Date())})
+      city(maxLength:30,blank:false)
+      state(inList:['GA','NC','SC','VA','TX','LA','OK','AK'],blank:false)
+      distance(min:3.1f,max:100f)
+      cost(min:0f,max:999.99f)
+
     }
+
 }
